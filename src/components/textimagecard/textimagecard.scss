@@ -1,0 +1,23 @@
+.textimage-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    .textimage-content{
+        position: absolute;
+        max-width: 35%;
+        left: 3.125rem;
+        bottom: 4.6875rem;
+        .textimage-title{
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 1.25rem;
+        }
+        .textimage-desc{
+            font-size: 1.125rem;
+        }
+    }
+}

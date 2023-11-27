@@ -1,0 +1,31 @@
+.total-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: var(--success100);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 1rem;
+
+    .total-content-text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 1.25rem;
+        max-width: 55%;
+    }
+    .total-icon{
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .total-card{
+        padding: 1rem;    
+        margin-bottom: 0.625rem;
+        .total-content-text{
+            padding-right: 1rem;
+            max-width: 100%;
+        }
+    }
+}

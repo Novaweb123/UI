@@ -1,0 +1,15 @@
+.sort-wrapper{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0.625rem;
+    .sort-up{
+        display: flex;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+    .sort-down{
+        display: flex;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,32 @@
+.status-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .active{
+        display: inline-flex;
+        background-color: var(--green600);
+        color: var(--green700);
+        font-weight: 600;
+        padding: 2px 0.4375rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .inactive{
+        display: inline-flex;
+        background-color: var(--gray600);
+        color: var(--gray400);
+        font-weight: 600;
+        padding: 2px 0.4375rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .disabled{
+        display: inline-flex;
+        background-color: var(--gray600);
+        color: var(--danger);
+        font-weight: 600;
+        padding: 2px 0.4375rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}

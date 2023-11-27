@@ -1,0 +1,28 @@
+.progress-bar-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 0.8125rem;
+    color: var(--blackhalf);
+    .progress-bar-text{
+        margin: 0 0 0.625rem !important;
+    }
+    .progress-bar-main{
+        display: flex;
+        height: 5px;
+        overflow: hidden;
+        background-color: #DDE2E1;
+        border-radius: 0.625rem;
+        .progress-bar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            color: var(--blackhalf);
+            text-align: center;
+            white-space: nowrap;
+            background-color: var(--primary);
+            transition: width 0.6s ease;
+        }
+    }
+}

@@ -1,0 +1,148 @@
+.layout-panel-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .lp-main-wrapper{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        /*margin-top: 5.3125rem;*/
+
+        .lp-content-main-wrapper{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-color: var(--gray900);
+            color: var(--black);
+            background-position: right top;
+            background-repeat: no-repeat;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            
+            transition: all ease-in 0.2s;
+            .main-wrapper{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                min-height: calc(100vh - 7.8125rem);
+                margin-top: 1.5rem;
+            }
+        }
+        &.lp-main-tablet{
+            .lp-sidebar-wrapper{
+                width: 50px;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .lp-content-main-wrapper{
+                width: calc(100% - 50px);
+                margin-left: 50px;
+            }
+        }
+
+       /* .lp-sidebar-wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            background-color: var(--gray600);
+            color: var(--white);
+            padding: 2.875rem 1.205rem;
+            height: calc(100vh - 5.3125rem);
+            overflow-y: auto;
+            position: fixed;
+            top: 5.3125rem;
+            left: 0;
+            transition: width ease-in 0.2s;
+        }
+        .lp-content-main-wrapper{
+            display: flex;
+            flex-direction: column;
+            width: calc(100% - 245px);
+            margin-left: 245px;
+            background-color: var(--gray900);
+            color: var(--black);
+            
+            background-position: right top;
+            background-repeat: no-repeat;
+            padding-left: 4.5rem;
+            padding-right: 2.5rem;
+            justify-content: space-between;
+            transition: all ease-in 0.2s;
+            &.no-content-bg{
+                background-image: none;
+            }
+            &.is-full-width {
+                width: 100%;
+                margin-left: 0px;
+            }
+            .main-wrapper{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                min-height: calc(100vh - 7.8125rem);
+                margin-top: 2.5rem;
+            }
+        }
+        &.lp-main-tablet{
+            .lp-sidebar-wrapper{
+                width: 50px;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .lp-content-main-wrapper{
+                width: calc(100% - 50px);
+                margin-left: 50px;
+            }
+        }*/
+    }
+}
+@media screen and (max-width: 767px) {
+    .layout-panel-wrapper{
+        .lp-main-wrapper{
+            height: auto;
+            margin-top: 3.75rem;
+            .lp-sidebar-wrapper{
+                width: 15.3125rem;
+                padding: 1.875rem 1.125rem;
+                top: calc(0px + 3.75rem);
+            }
+            .lp-content-main-wrapper{
+                width: 100%;
+                margin-left: 0;
+                .main-wrapper{
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+    .layout-panel-wrapper{
+        .lp-main-wrapper{
+            height: calc(100vh - 3.75rem);
+            margin-top: 3.75rem;
+            &.menu-active{
+                .lp-sidebar-wrapper{
+                    left: 0;
+                }
+                .lp-content-main-wrapper{
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+            .lp-sidebar-wrapper{
+                width: 100%;
+                height: calc(100% - 3.75rem);
+                position: fixed;
+                top: 3.75rem;
+                left: 100%;
+                z-index: 9;
+                transition: left ease-in 0.2s;
+            }
+            .lp-content-main-wrapper{
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }    
+}

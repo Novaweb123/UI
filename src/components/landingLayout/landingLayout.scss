@@ -1,0 +1,43 @@
+.landing-layout{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--secondary);
+    position: relative;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    &::before{
+        content: '';
+        //background-image: url('../../assets/images/landing_bg.png');
+        background-position: left top;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    &::after{
+        content: '';
+        //background-image: url('../../assets/images/bg-pattern-circle.svg');
+        background-position: right top;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .landing-main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+    }
+}

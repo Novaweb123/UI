@@ -1,0 +1,30 @@
+.text-readonly-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3rem;
+    .text-readonly-item-label{
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: var(--blackhalf);
+        display: flex;
+        margin-bottom: 0.75rem;
+    }
+    .text-readonly-item-title{
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        display: flex;
+        color: var(--black);
+        margin-bottom: 0;
+    }   
+}
+@media screen and (max-width: 767px) {
+    .text-readonly-item{
+        margin-bottom: 1.5rem;
+        .text-readonly-item-title{
+            font-size: 1rem;
+        }   
+    }
+}

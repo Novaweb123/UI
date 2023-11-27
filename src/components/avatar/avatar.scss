@@ -1,0 +1,15 @@
+.avatar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    &.avatar-48{
+        max-width: 3rem;
+        min-width: 3rem;
+    }
+    &.avatar-40{
+        max-width: 2.5rem;
+        min-width: 2.5rem;
+    }
+}

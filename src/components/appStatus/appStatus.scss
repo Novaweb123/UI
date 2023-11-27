@@ -1,0 +1,32 @@
+.app-status-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .app-status{
+        display: inline-flex;
+        font-weight: 600;
+        padding: 2px 0.4375rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        &.approved{
+            background-color: var(--green600);
+            color: var(--green700);
+        }
+        &.pending{
+            background-color: var(--warning100);
+            color: var(--warning);
+        }
+        &.rejected{
+            background-color: var(--danger100);
+            color: var(--danger);
+        }
+        &.successful{
+            background-color: var(--green600);
+            color: var(--green700);
+        }
+        &.unsuccessful{
+            background-color: var(--danger100);
+            color: var(--danger);
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.icon{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-direction: column;
+    &.square{
+        border-radius: 5px;
+    }
+    &.circle{
+        border-radius: 50%;
+    }
+    &.bg-primary{
+        background-color: var(--primary);
+        color: var(--white);
+    }
+    &.bg-success{
+        background-color: var(--success);
+        color: var(--white);
+    }
+    &.bg-approved{
+        background-color: var(--approved);
+        color: var(--white);
+    }
+    &.bg-rejected{
+        background-color: var(--reject);
+        color: var(--white);
+    }
+    &.bg-danger{
+        background-color: var(--dagner);
+        color: var(--white);
+    }
+    &.bg-pending{
+        background-color: var(--pending);
+        color: var(--white);
+    }
+    &.bg-light{
+        background-color: var(--light100);
+        color: var(--black);
+    }
+    &.bg-white{
+        background-color: var(--white);
+        color: var(--black);
+    }
+    &.bg-dark{
+        background-color: var(--black800);
+        color: var(--white);
+    }
+    &.bg-green-cyan{
+        background-color: var(--green-cyan100);
+        color: var(--white);
+    }
+    &.bg-gray{
+        background-color: var(--light900);
+        color: var(--black);
+    }
+    &.extra-small{
+        width: 1rem;
+        height: 1rem;
+    }
+    &.small{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    &.size-32{
+        width: 2rem;
+        height: 2rem;
+    }
+    &.large{
+        width: 4rem;
+        height: 4rem;
+    }
+    &.extra{
+        width: 6rem;
+        height: 6rem;
+    }
+    &.extra-large{
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+}

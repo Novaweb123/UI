@@ -1,0 +1,14 @@
+th{
+    .th{
+        display: flex;
+        align-items: center;
+        small{
+            font-size: 0.625rem;
+        }
+    }
+    &.text-center{
+        .th{
+            justify-content: center;
+        }
+    }
+}

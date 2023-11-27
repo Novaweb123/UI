@@ -1,0 +1,45 @@
+.identification-attachment-card{
+    display: flex;
+    padding: 1rem 0.625rem;
+    width: 100%;
+    background-color: var(--light500);
+    border: 1px solid rgba(217, 217, 217, 0.5);
+    align-items: flex-start;
+    .identification-attachment-image{
+        width: 4.6875rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .identification-attachment-details{
+        display: flex;
+        width: calc(100% - 4.6875rem);
+        padding-left: 1.5rem;
+        flex-direction: column;
+        .title{
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .identification-attachment-file-detail{
+            color: var(--blackhalf);
+            font-size: 0.75rem;
+            font-weight: 400;
+            margin-top: 0.4375rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            .idafd-detail{
+                display: flex;
+                flex-direction: column;
+            }
+            .idafd-detail-download{
+                color: var(--primary);
+                display: flex;
+                flex-direction: column;
+                margin-left: 0.625rem;
+                a{
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.image-element{
+    display: flex;
+    width: 100%;
+    img{
+        &.img-fluid{
+            max-width: 100%;
+            height: auto;
+        }
+        &[alt]{
+            font-size: 0.625rem;
+        }
+    }
+}

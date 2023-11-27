@@ -1,0 +1,32 @@
+.nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    .nav-item{
+        margin-bottom: 1rem;
+        .nav-link{
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 400;
+            font-size: 1rem;
+            &:hover{
+                color: var(--primary);
+            }
+        }
+    }
+    &.socialmedia{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .nav-item{
+            margin-left: 1.875rem;
+            margin-bottom: 0px;
+            &:first-child{
+                margin-left: 0px;
+            }
+        }
+    }
+}

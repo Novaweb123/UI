@@ -1,0 +1,32 @@
+.heroslider{
+    .hero-item{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        .hero-image{
+            img{
+                width: 100%;
+            }
+        }
+        .hero-content{
+            position: absolute;
+            bottom: 3.75rem;
+            width: 100%;
+        }
+        .hero-caption{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            h1{
+                font-size: 3.25rem;
+                line-height: 3.875rem;
+                font-weight: 600;
+                margin-bottom: 0;
+                color: var(--white);
+                max-width: 50%;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

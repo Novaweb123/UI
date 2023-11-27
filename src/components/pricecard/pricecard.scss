@@ -1,0 +1,90 @@
+.price-group{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.125rem;
+}
+.price-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 32%;
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+    &.active{
+        max-width: 36%;
+        .price-card{
+            padding: 2.5rem;
+            background-color: var(--primary100);
+            p{
+                color: var(--black);
+            }
+        }
+    }
+}
+.price-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--white);
+    border: 1px solid var(--light300);
+    border-radius: 5px;
+    padding: 1.5rem;
+    position: relative;
+    .tag-ribbon{
+        position: absolute;
+        right: 1.25rem;
+        top: -1px;
+    }
+    h1{
+        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--black300);
+        margin-bottom: 0;
+    }
+    h2{
+        color: var(--green);
+        margin-bottom: 1.25rem;
+        line-height: 1.2;
+        span{
+            color: var(--black);
+            font-size: 1.125rem;
+        }
+    }
+    P{
+        color: var(--gray200);
+        font-size: 1.0625rem;
+        font-weight: 400;
+        margin: 0;
+    }
+    ul{
+        color: var(--black);
+        margin: 1rem 0 0;
+        padding: 0;
+        font-size: 1.0625rem;
+        line-height: 1.2;
+        list-style: none;
+        li.list-item{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 1.25rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .icon{
+                margin-top: 0.25rem;
+            }
+
+            .list-item-text{
+                width: calc(100% - 2.875rem);
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

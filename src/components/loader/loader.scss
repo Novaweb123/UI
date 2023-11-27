@@ -1,0 +1,23 @@
+.loader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    min-height: 18.75rem;
+    .loading {
+        width: 3.75rem;
+        height: 3.75rem;
+        margin-bottom: 1.25rem;
+        animation: spin 2s linear infinite;
+        svg {
+            width: 3.75rem;
+            height: 3.75rem;
+            path {
+                fill: var(--primary);
+            }
+        }
+    }
+}

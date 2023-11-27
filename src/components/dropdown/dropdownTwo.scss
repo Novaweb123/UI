@@ -1,0 +1,99 @@
+.dropdown-box{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    &.dropdown-right{
+        .dropdown-menu{
+            right: 0;
+        }
+    }
+    &.dropdown-secondary{
+        .dropdown-menu{
+            background-color: var(--white);
+            border-radius: 5px;
+            .dropdown-item{
+                &:first-child{
+                    .dropdown-link{
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                    }
+                }
+                &:last-child{
+                    .dropdown-link{
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+                .dropdown-link{
+                    font-size: 0.875rem;
+                    padding: 1rem 1.125rem;
+
+                    &:hover, &.active{
+                        background-color: var(--primary);
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+    .btn{
+        font-size: 1rem;
+        text-transform: inherit;
+        font-weight: 400;
+        &.dropdown-toggle{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .dropdown-menu{
+        background-color: var(--white);
+        border: 1px solid var(--grayhalf);
+        border-radius: 5px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        min-width: 12.5rem;
+        z-index: 2;
+        .dropdown-item{
+            display: flex;
+            .dropdown-link{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                // background-color: var(--white);
+                color: var(--blackhalf);
+                font-weight: 400;
+                font-size: 0.875rem;
+                padding: 1rem;
+                line-height: 1.4;
+                width: 100%;
+                border-bottom: 1px solid rgba(191, 191, 191, 0.58);
+                cursor: pointer;
+                &:hover{
+                    background-color: var(--primary);
+                    color: var(--white);
+                }
+            }
+            &:last-child{
+                .dropdown-link{
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+    .dropdown-backdrop{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
